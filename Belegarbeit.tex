@@ -1,0 +1,97 @@
+\documentclass[11pt]{article}
+
+\usepackage{textcomp}
+\usepackage{sectsty}
+\usepackage{graphicx}
+\usepackage{titlesec}
+\usepackage[onehalfspacing]{setspace}
+\usepackage{float}
+\usepackage[ngerman]{babel}
+\usepackage{fancyhdr}
+\usepackage[a4paper, left=2.5cm, right=2cm, bottom=2cm, headheight=2cm]{geometry}
+\usepackage{lipsum}
+\usepackage{tocloft}
+
+\setlength{\cftsecindent}{0em}
+\setlength{\cftsubsecindent}{0em}
+\setlength{\cftsubsubsecindent}{0em}
+\setlength{\cftsecnumwidth}{4em}
+\setlength{\cftsubsecnumwidth}{4em}
+\setlength{\cftsubsubsecnumwidth}{4em}
+
+
+\renewcommand{\sectionmark}[1]{\markright{#1}}
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{{\rightmark }} 
+\fancyfoot[R]{\thepage}
+\rhead{\includegraphics[scale=0.3]{Logo}}
+
+\usepackage{graphicx}
+\graphicspath{ {./Img/} }
+
+\setcounter{secnumdepth}{4}
+
+
+\setlength{\parindent}{0em}
+
+
+
+
+
+\begin{document}
+
+\begin{titlepage}
+    \begin{center}
+        \vspace*{1cm}
+        
+        \Huge
+        \textbf{Infrastructure as Code}
+        
+        \Large
+        \vspace{0.5cm}
+        Die Rolle von Ansible für die Automatisierung und Dokumentation von 
+        IT-Infrastrukturen
+             
+        \vspace{1.5cm}
+ 
+        \textbf{Paul Herrmann}
+ 
+        \vfill
+                 
+        \vspace{0.8cm}
+      
+        \includegraphics[width=1\textwidth]{Logo_Schule}
+             
+        reddo IT-SERVICE\\
+        BSZ ET Dresden\\
+        \today
+             
+    \end{center}
+ \end{titlepage}
+
+\thispagestyle{empty}
+\pagebreak
+\tableofcontents
+\thispagestyle{empty}
+\pagebreak
+\setcounter{page}{1}
+\section{Test}
+\subsection{Test Unterkapitel}
+\lipsum
+\subsection{Unterkapitel Test}
+\lipsum
+\subsubsection{Test}
+\lipsum
+\subsubsection{Test}
+\lipsum
+\section{Test}
+\subsection{Test Unterkapitel}
+\lipsum
+\subsection{Unterkapitel Test}
+\lipsum
+\subsubsection{Test}
+\lipsum
+\subsubsection{Test}
+\lipsum
+\end{document}
